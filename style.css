@@ -1,0 +1,46 @@
+body {
+    background-color: #e5fffc;
+    display: grid;
+    place-items: center;
+    height: 100vh; /* Full screen height */
+    margin: 0;
+}
+
+.video-container{
+    display: flex;
+    flex-direction: column; /* Stack video and button vertically */
+    align-items: center;    /* Center the button horizontally */
+}
+
+video {
+    max-width: 80%; /* Restrict width to 90% of the screen */
+    max-height: 80vh; /* Restrict height to 80% of the viewport height */
+    width: auto;
+    height: auto;
+}
+
+button {
+    background: none; /* Remove default background */
+    border: none;     /* Remove border */
+    padding: 0;       /* Remove padding */
+    cursor: pointer;  /* Optional: change cursor to pointer when hovering */
+}
+
+button img {
+    max-width: 50%; /* Restrict width to 90% of the screen */
+    max-height: 50vh; /* Restrict height to 80% of the viewport height */
+    width: auto;
+    height: auto;
+}
+
+#letter {
+    display: none; /* Hide the letter initially */
+    max-width: 200%;
+    max-height: 200vh;
+    width: auto;
+    height: auto;
+    position: absolute; /* Absolute positioning to center */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center it horizontally and vertically */
+}
